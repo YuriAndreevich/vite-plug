@@ -15,7 +15,12 @@ export default defineConfig({
 
   base: '/',
   resolve: {
-    alias: [{ find: '@', replacement: '/src' }],
+    alias: {
+      components: '/src/components',
+      hooks: '/src/hooks',
+      assets: '/src/assets',
+      store: '/src/store',
+    },
   },
   define: {
     'process.env': process.env
