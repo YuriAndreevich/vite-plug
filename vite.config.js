@@ -5,7 +5,9 @@ export default defineConfig({
   server: {
     watch: {
       usePolling: true
-    }
+    },
+    port: 3000,
+    host: 'localhost'
   },
   plugins: [react({
     exclude: /\.stories\.(t|j)sx?$/,
